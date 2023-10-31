@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aman Kumar's Comprehensive Resume</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            color: red;
+        }
+        h2 {
+            cursor: pointer;
+            color: blue;
+        }
+        h2:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+            color: black;
+        }
+        .contact {
+            color: violet;
+        }
+        .objective {
+            color: red;
+        }
+        .education {
+            color: blue;
+        }
+        .experience {
+            color: green;
+        }
+        .achievements {
+            color: black;
+        }
+        .skills {
+            color: violet;
+        }
+        .language {
+            color: red;
+        }
+        .projects {
+            color: blue;
+        }
+        .certifications {
+            color: violet;
+        }
+        .interests {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aman Kumar</h1>
+        <h2 class="contact" onclick="toggleSection('contact')">Contact</h2>
+        <div id="contact" class="content">
+            <p>Phone: 7544992625</p>
+            <p>Email: amankumar292004@gmail.com</p>
+            <p>Address: Bokaro Steel City, Jharkhand</p>
+        </div>
+
+        <h2 class="objective" onclick="toggleSection('objective')">Objective</h2>
+        <div id="objective" class="content">
+            <p>Seeking a challenging internship or part-time role in software development and data analysis to expand skills and gain hands-on experience while excelling academically.</p>
+        </div>
+
+        <h2 class="education" onclick="toggleSection('education')">Education</h2>
+        <div id="education" class="content">
+            <p>B.Tech in Computer Science</p>
+            <p>Ramgarh Engineering College</p>
+            <p>2022-2026</p>
+
+            <p>Senior Secondary (XII), Science</p>
+            <p>Holy Cross School</p>
+            <p>2020-2022</p>
+
+            <p>Secondary (X)</p>
+            <p>Mount Sion School</p>
+            <p>2008-2020</p>
+        </div>
+
+        <h2 class="experience" onclick="toggleSection('experience')">Experience</h2>
+        <div id="experience" class="content">
+            <p>Subject-matter expert</p>
+            <p>Chegg Inc</p>
+            <p>Sep 2023 - Current</p>
+
+            <p>Subject-matter expert</p>
+            <p>Dudar Edtech Pvt Ltd</p>
+            <p>Jan 2023 - Current</p>
+        </div>
+
+        <h2 class="achievements" onclick="toggleSection('achievements')">Achievements</h2>
+        <div id="achievements" class="content">
+            <ul>
+                <li>Qualified first round of IYMC</li>
+                <li>Leader of the Best team in College in Kavach internal Hackathon 2023</li>
+                <li>SIH 2023</li>
+            </ul>
+        </div>
+
+        <h2 class="skills" onclick="toggleSection('skills')">Skills</h2>
+        <div id="skills" class="content">
+            <p>Leadership</p>
+            <p>Python, MySQL, HTML, JavaScript, CSS, C</p>
+        </div>
+
+        <h2 class="language" onclick="toggleSection('language')">Language</h2>
+        <div id="language" class="content">
+            <p>English, Hindi, Bengali</p>
+            <p>French (beginner)</p>
+        </div>
+
+        <h2 class="projects" onclick="toggleSection('projects')">Projects</h2>
+        <div id="projects" class="content">
+            <p>Developed a web-based e-commerce platform using Django</p>
+            <p>Created a mobile app for task management with React Native</p>
+        </div>
+
+        <h2 class="certifications" onclick("toggleSection('certifications')">Certifications</h2>
+        <div id="certifications" class="content">
+            <p>Certified in Data Science from Coursera</p>
+            <p>Java Programming Certification from Oracle</p>
+        </div>
+
+        <h2 class="interests" onclick="toggleSection('interests')">Interests</h2>
+        <div id="interests" class="content">
+            <p>Machine Learning, Artificial Intelligence</p>
+            <p>Hiking, Photography</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
