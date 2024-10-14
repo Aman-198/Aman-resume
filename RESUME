@@ -68,7 +68,7 @@
         <div id="contact" class="content">
             <p>Phone: 7544992625</p>
             <p>Email: amankumar292004@gmail.com</p>
-            <p>Address: Bokaro Steel City, Jharkhand</p>
+            <p>Address: Bokaro, Jharkhand</p>
         </div>
 
         <h2 class="objective" onclick="toggleSection('objective')">Objective</h2>
